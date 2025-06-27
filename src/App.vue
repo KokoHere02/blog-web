@@ -13,11 +13,11 @@ import MainPage from './page/mainPage.vue';
 
   <!-- Main -->
   <div class="flex flex-1 min-h-0 w-full">  
-    <aside class="bg-red-200 w-64 flex items-center">左边左边</aside>
+    <!-- <aside class="bg-red-200 w-64 flex items-center">左边左边</aside> -->
     <main class="flex-1 bg-green-200 flex justify-center ">
       <MainPage/> 
     </main>
-    <aside class="bg-blue-200 w-64 flex items-center">右边</aside> 
+    <!-- <aside class="bg-blue-200 w-64 flex items-center">右边</aside>  -->
   </div>
 
   <!-- Footer -->
