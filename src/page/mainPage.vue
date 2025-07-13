@@ -1,9 +1,17 @@
 <script setup lang="ts">
 import ArticleCard from '@/components/ArticleCard.vue';
+import { getUserInfo } from '@/api/user';
+import { onMounted } from 'vue';
 const handleReadMore = () => {
   console.log('阅读全文');
 };
 
+onMounted(() => {
+  console.log('环境变量：', import.meta.env.VITE_API_BASE_URL)
+  getUserInfo('1').then(res => {
+    console.log(res);
+  })
+})
 </script>
 
 <template>
